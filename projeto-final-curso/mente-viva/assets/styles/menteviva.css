@@ -233,7 +233,13 @@ img {
   vertical-align: middle;
   max-width: 100%;
   display: inline-block;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
+
+img:hover {
+  transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original ao passar o mouse */
+}
+
 
 html.w-mod-touch * {
   background-attachment: scroll !important;
@@ -393,6 +399,7 @@ h2 {
 }
 
 h3 {
+  font-family: "roboto";
   margin-top: 20px;
   font-size: 24px;
   line-height: 30px;
@@ -2125,6 +2132,7 @@ textarea.w-input, textarea.w-select {
 .heading {
   text-align: center;
   font-size: 50px;
+  font-family:"raleway";
 }
 
 .paragraph {
@@ -2132,7 +2140,7 @@ textarea.w-input, textarea.w-select {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .section-2 {
@@ -2254,15 +2262,30 @@ textarea.w-input, textarea.w-select {
 .image-5 {
   width: 100px;
   margin-top: auto;
-  border-radius: 8px; /* Borda levemente arredondada */
+  border-radius: 80px;
+  /*Bordalevementearredondada*/;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
 }
 
 .image-wrapper {
-  border: 2px solid purple; /* Borda roxa de 2px */
-  border-radius: 8px; /* Borda levemente arredondada */
+  /* Borda levemente arredondada */
+  border-radius: 100px;
   display: inline-block; /* Ajusta o comportamento de bloco para a borda */
-  padding: 5px; /* Espaço entre a borda e a imagem, opcional */
+  padding: 5px; /* Espaço entre a borda arredondada e a imagem */
+  
+  /* Adicionar sombra suave ao redor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  /* Propriedades para diferentes navegadores */
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
+
 
 @media screen and (max-width: 479px) {
   .navbar {

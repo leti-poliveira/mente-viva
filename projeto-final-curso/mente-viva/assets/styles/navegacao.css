@@ -1,13 +1,19 @@
 /* Estilo geral do menu de navegação */
 .navbar {
   background-color: #fff;
-  margin: 10px 0;
+  margin: 0; /* Remova a margem para que a navbar fique fixada corretamente */
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between; /* Espaça o dropdown e o botão DOE AGORA */
+  position: fixed; /* Faz a navbar ficar fixa */
+  top: 0; /* Posiciona a navbar no topo da página */
+  left: 0; /* Alinha a navbar à esquerda */
+  right: 0; /* Alinha a navbar à direita */
+  z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
 }
+
 
 /* Estilo do menu principal (ul) */
 ul {
@@ -66,6 +72,7 @@ li a:hover {
   margin: 0 10px; /* Espaçamento lateral entre os links */
   transition: background-color 0.3s ease;
   text-align: center;
+  font-size: 20px;
 }
 
 /* Estilo para o botão DOE AGORA */
@@ -80,6 +87,7 @@ li a:hover {
   text-align: center;
   transition: background-color 0.3s ease;
   margin: 0 10px; /* Espaçamento lateral entre o botão e os links */
+  font-size: 20px;
 }
 
 /* Cor de fundo do botão DOE AGORA ao passar o mouse */

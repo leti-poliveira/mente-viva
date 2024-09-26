@@ -11,12 +11,13 @@
   }
   
   .heading-ajudar {
-    font-size: 32px;
+    font-family: "roboto";
+    font-size: 38px;
     margin-bottom: 20px;
   }
   
   .paragraph-ajudar {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 40px;
   }
   
@@ -37,7 +38,9 @@
   }
   
   h3 {
-    font-size: 24px;
+    text-align: center;
+    font-family: "roboto";
+    font-size: 38px;
     margin-bottom: 10px;
   }
   
@@ -70,7 +73,7 @@
   
   .form-cadastro input {
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
