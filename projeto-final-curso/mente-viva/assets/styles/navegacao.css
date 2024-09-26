@@ -110,7 +110,13 @@ li a:hover {
   background-color: #fff;
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Faz a navbar ficar fixa */
+  top: 0; /* Posiciona a navbar no topo da página */
+  left: 0; /* Alinha a navbar à esquerda */
+  right: 0; /* Alinha a navbar à direita */
+  z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
 }
+
 
 /* Adicionar ícone de seta nos links com dropdown */
 .w-dropdown-toggle::after {
