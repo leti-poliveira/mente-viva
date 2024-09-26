@@ -1,0 +1,29 @@
+/* Seção Sobre Nós */
+#sobre-nos {
+    width: 100%;
+    padding-top: 1px;
+    /* Bordas arredondadas */
+    position: relative;  /* Para o pseudo-elemento */
+    z-index: 1;          /* Para manter o #sobre-nos acima do conteúdo */
+    background-color: #fff; /* Cor de fundo opcional */
+    text-align: center;  /* Centralizar o texto */
+
+}
+
+/* Estilo adicional para o conteúdo */
+#sobre-nos .missao {
+    margin: 0 auto;
+    max-width: 800px;    /* Definir uma largura máxima */
+    padding: 20px;
+}
+
+#sobre-nos .fundoDesfocado {
+    background: #A593E0; /* Fundo branco levemente transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color:  #4B1F30; /* Cor escura (um tom de cinza) */
+}
